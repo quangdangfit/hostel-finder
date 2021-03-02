@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HostelDetailActivity">
+
+    <ImageView
+        android:id="@+id/imghinhDetail"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/grayColor" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imghinhDetail"
+        android:layout_marginTop="-5dp">
+
+        <TextView
+            android:id="@+id/tvdiaChiDetail"
+            android:layout_width="315dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blackColor"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnmapDetail"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/tvdiaChiDetail"
+            android:text="Map" />
+
+        <TextView
+            android:id="@+id/tvgiaDetail"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvdiaChiDetail"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blackColor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvdienTichDetail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvgiaDetail"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blackColor"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tvsdtDetail"
+            android:layout_width="315dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvdienTichDetail"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/blackColor"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btngoiDetail"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvdienTichDetail"
+            android:text="Gọi" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới thiệu:"
+            android:textSize="15dp"
+            android:textColor="@color/blackColor"/>
+
+        <TextView
+            android:id="@+id/tvintroDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvstarDetail"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackColor"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

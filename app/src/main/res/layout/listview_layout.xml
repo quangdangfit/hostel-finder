@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imghinh"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/grayColor" />
+
+    <TextView
+        android:id="@+id/tvdiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imghinh"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Địa chỉ: "
+        android:textColor="@color/blackColor"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvdienTich"
+        android:text="Diện tích: "
+        android:layout_toRightOf="@id/imghinh"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textSize="13dp"
+        android:layout_below="@id/tvdiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvgia"
+        android:text="Giá: "
+        android:layout_toRightOf="@id/imghinh"
+        android:paddingLeft="10dp"
+        android:textSize="13dp"
+        android:layout_below="@id/tvdienTich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
